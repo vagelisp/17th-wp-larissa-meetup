@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>Gutenberg is great, change my mind.</title>
+
+	<link rel="stylesheet" href="css/reveal.css" />
+	<link rel="stylesheet" href="css/theme/myplanet.css" />
+	<link rel="stylesheet" href="/plugin/poll/style.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/stackoverflow-dark.css" />
+	<link rel="icon" href="lib/wcath22/logo_site_info.png" />
+
+	<!-- Printing, PDF exports & PLugins -->
+	<script src="js/reveal-print.js"></script>
+	<script src="/lib/js/qrious.min.js"></script>
+	<script src="/lib/js/chart.min.js"></script>
+	<script src="/lib/js/socket.io.js"></script>
+	<script src="/plugin/seminar/plugin.js"></script>
+	<script src="/plugin/poll/plugin.js"></script>
+	<script src="/plugin/chart/plugin.js"></script>
+</head>
+
+<body>
+	<div class="reveal pattern--random">
+		<div class="slides">
+			<section>
+				<section class="title" id="title">
+					<div class="grid-wrapper">
+						<div class="header">
+							<!-- Remove logo--full class to only show brand mark -->
+							<div class="logo logo--full">
+								<span class="visually-hidden">WCATH22</span>
+							</div>
+						</div>
+						<div class="content">
+							<h1>Gutenberg &</br><span class="striked">Full Site Editing</span></br>Site Editor!
+							<!-- <div class="description" style="overflow: hidden">
+								<canvas id="qrcode" style="width: 100%"></canvas>
+								<p>Vagelis Papaioannou</p>							
+							</div> -->
+						</div>
+						<div class="credit" style="margin-top: -20px;">
+							<hr />
+							<!-- <div class="label">Presented By</div> -->
+							<div class="name">Vagelis Papaioannou</div>
+							<!-- <div class="role">Software Developer</div> -->
+							<div class="role">hello@vagelis.dev</div>
+							<div class="role">GitHub: @vagelisp</div>
+							<div class="role">Twitter: @vagpapdev</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="title" id="allgood">
+				<div class="grid-wrapper">
+					<div class="header">
+						<!-- Remove logo--full class to only show brand mark -->
+						<div class="logo logo--full">
+							<span class="visually-hidden">WCATH22</span>
+						</div>
+					</div>
+					<div class="content">
+						<h1>Εκεί που ήταν </br>
+							<ssmall>όλα καλά και υπό έλεγχο...</ssmall>
+						</h1>
+						<div class="description">
+							<img src="/lib/wcath22/vp-calm.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="title-freaked" style="overflow:hidden;background-color: rgba(255,255,255,0.9);"
+				id="say-what">
+				<div class="grid-wrapper">
+					<div class="">
+						<h1>... Gutenberg !!!</h1>
+						<div class="description">
+							<img src="/lib/wcath22/vp-freaked.jpg" style="height: 1000px;object-fit: cover;"
+								class="fhim">
+						</div>
+					</div>
+			</section>
+			<section class="title-elmo" style="overflow:hidden;background-color: rgba(255,255,255,0.9);"
+				id="the-pain-is-real">
+				<div class="grid-wrapper">
+					<div class="">
+						<h1>"2016 State of the Word"<br><small>drama δράμα drama δράμα</small></h1>
+						<div class="description">
+							<img src="/lib/wcath22/elmo-on-fire.gif" style="height: 1000px;object-fit: cover;"
+								class="fhim">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section> -->
+			<section id="classic-editor">
+				<section id="classic-editor-window" class="color--ice" style="text-align:center;" data-transition="concave">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Classic Editor</h1>
+						</div>
+						<div class="content">
+							<img data-src="lib/wcath22/tinymce.png" style="">
+						</div>
+					</div>
+				</section>
+				<section class="subsecstion color--ice" id="features">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Classic Editor</h1>
+						</div>
+						<div class="content">
+							<!-- <h1 class="fragment highlight-red" data-fragment-index="1" >Columns Support</h1> -->
+							<h1 class="fragment fade-in">
+								<span class="fragment highlight-green">
+									Γνώριμο περιβάλλον
+								</span>
+							</h1>
+							<h1 class="fragment fade-in">
+								<span class="fragment highlight-green">
+									Backward compatibility
+								</span>
+							</h1>
+							<h1 class="fragment fade-in">
+								<span class="fragment highlight-red">
+									Δημιουργία στηλών
+								</span>
+							</h1>
+
+							<h1 class="fragment fade-in">
+								<span class="fragment highlight-red">
+									Χρήση Shortcodes
+								</span>
+							</h1>
+							<h1 class="fragment fade-in">
+								<span class="fragment highlight-green">
+									Κατανάλωση ενέργειας
+								</span>
+							</h1>
+							<h1 class="fragment fade-in">
+								<span class="fragment highlight-red">
+									UX | EOL
+								</span>
+							</h1>
+						</div>
+						<!-- <img data-src="lib/wcath22/tinymce.png" style="margin-top:50px;"> -->
+					</div>
+				</section>
+			</section>
+
+			<!-- </section> -->
+			<section id="gutenberg">
+				<section class="subsection color--midnight" id="gutenberg-window">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Gutenberg</h1>
+						</div>
+
+						<img data-src="lib/wcath22/builder3.gif" style="smargin-top:100px; max-height:1000px;">
+					</div>
+				</section>
+			</section>
+			<section class="quote color--midnight" id="gutenberg-features">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<h1>Block Editor</h1>
+					</div>
+					<div class="content">
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-red">
+								Νέο περιβάλλον
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-red">
+								Backward compatibility
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Δημιουργία στηλών
+							</span>
+						</h1>
+
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Theme agnostic
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Ταχύτητα
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Επεκτασιμότητα
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Κατανάλωση ενέργειας
+							</span>
+						</h1>
+					</div>
+					<!-- <img data-src="lib/wcath22/tinymce.png" style="margin-top:50px;"> -->
+				</div>
+			</section>
+			<section id="site-editor">
+				<section class="subsection color--midnight" id="site-editor">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<h1><span class="striked">Full Site Editing</span> Site Editor - FSE</h1>
+						</div>
+
+						<img data-src="lib/site-editor.png" style="smargin-top:100px; max-height:1000px;">
+					</div>
+				</section>
+			</section>
+			<section class="quote color--midnight" id="fse">
+				<div class="grid-wrapper">
+				<div class="header">
+						<div class="logo"></div>
+						<h1>FSE</h1>
+					</div>
+					<div class="content">
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Site Editor
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Templates
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								Template Parts
+							</span>
+						</h1>
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-red">
+								Post Patterns
+							</span>
+						</h1>
+					</div>
+					<!-- <img data-src="lib/wcath22/tinymce.png" style="margin-top:50px;"> -->
+				</div>
+			</section>
+			<section>
+				<section class="quote color--midnight" id="quote--midnight-crfc">
+					<div class="grid-wrapper" style="padding-bottom:0;">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Case Studies</h1>
+						</div>
+					</div>
+				</section>
+				<section class="quote color--midnight" id="quote--midnight-crfc">
+					<div class="grid-wrapper" style="padding-bottom:0;">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>WordCamp Europe Athens 2023</h1>
+						</div>
+						<iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay"
+							data-src="https://europe.wordcamp.org/2023/"
+							style="width: 100%; height: 100%; max-height: 100%; max-width: 100%;"
+							src="https://europe.wordcamp.org/2023/"></iframe>
+					</div>
+				</section>
+				<section class="quote color--midnight" id="quote--midnight-crfc">
+					<div class="grid-wrapper" style="padding-bottom:0;">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Learn.wordpress.org</h1>
+						</div>
+						<iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay"
+							data-src="https://learn.wordpress.org/lesson-plans/"
+							style="width: 100%; height: 100%; max-height: 100%; max-width: 100%;"
+							src="https://learn.wordpress.org/lesson-plans/"></iframe>
+					</div>
+				</section>
+				<section class="quote color--midnight" id="quote--midnight-crfc">
+					<div class="grid-wrapper" style="padding-bottom:0;">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>CRANLEIGH</h1>
+						</div>
+						<iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay"
+							data-src="https://cranleighrugbyclub.co.uk/"
+							style="width: 100%; height: 100%; max-height: 100%; max-width: 100%;"
+							src="https://cranleighrugbyclub.co.uk/"></iframe>
+					</div>
+				</section>
+				<section class="quote color--midnight" id="quote--midnight-fish">
+					<div class="grid-wrapper" style="padding-bottom:0;">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Fishmongers</h1>
+						</div>
+						<iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay"
+							data-src="https://fishmongers.org.uk/"
+							style="width: 100%; height: 100%; max-height: 100%; max-width: 100%;"
+							src="https://fishmongers.org.uk/"></iframe>
+					</div>
+				</section>
+				<section class="quote color--midnight" id="quote--midnight-as">
+					<div class="grid-wrapper" style="padding-bottom:0;">
+						<div class="header">
+							<div class="logo"></div>
+							<h1>Chieftain</h1>
+						</div>
+						<iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay"
+							data-src="https://chieftainrangerover.com/"
+							style="width: 100%; height: 100%; max-height: 100%; max-width: 100%;"
+							src="https://chieftainrangerover.com/"></iframe>
+					</div>
+				</section>
+			</section>
+
+		
+		
+			
+
+			<section class="title" id="fin">
+				<div class="grid-wrapper">
+					<div class="header">
+						<!-- Remove logo--full class to only show brand mark -->
+						<div class="logo logo--full">
+							<span class="visually-hidden">WCATH22</span>
+						</div>
+					</div>
+											<div class="content">
+							<h1>Gutenberg &</br><span class="striked">Full Site Editing</span></br>Site Editor!
+							<h2>Ευχαριστώ πολύ</br> για την προσοχή σας.</h2>
+							<!-- <div class="description" style="overflow: hidden">
+								<canvas id="qrcode" style="width: 100%"></canvas>
+								<p>Vagelis Papaioannou</p>							
+							</div> -->
+						</div>
+						<div class="credit" style="margin-top: -20px;">
+							<hr />
+							<!-- <div class="label">Presented By</div> -->
+							<div class="name">Vagelis Papaioannou</div>
+							<!-- <div class="role">Software Developer</div> -->
+							<div class="role">hello@vagelis.dev</div>
+							<div class="role">GitHub: @vagelisp</div>
+							<div class="role">Twitter: @vagpapdev</div>
+						</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
+	<!-- <script src="lib/js/qrious.min.js"></script> -->
+
+	<script src="js/seminar.js"></script>
+	<script src="js/reveal-init.js"></script>
+	<script>
+
+		document.querySelector("#host").addEventListener("click", function (e) {
+			e.preventDefault();
+			RevealSeminar.open_or_join_room(
+				document.getElementById("password").value
+			);
+		});
+
+		document.querySelector("#hostSecond").addEventListener("click", function (e) {
+			e.preventDefault();
+			RevealSeminar.open_or_join_room(
+				document.getElementById("password").value
+			);
+		});
+
+    //   document.querySelector("#close").addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     RevealSeminar.close_room(document.getElementById("password").value);
+    //   });
+	</script>
+
+	</script> -->
+	<div id="seminar-status" style="display: none;"></div>
+</body>
+
+</html>
